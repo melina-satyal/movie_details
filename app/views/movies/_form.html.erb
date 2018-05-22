@@ -1,0 +1,9 @@
+<div class="container">
+<%= simple_form_for @movie, :html => { :multipart =>true} do |f| %>
+<%= select_tag(:category_id, options_for_select(@categories))%>
+<%= f.input :title, label: "Movie Title" %>
+<%= f.input :description %>
+<%= f.input :author %>
+<%= f.button :submit %>
+<% end %>
+</div>

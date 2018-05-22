@@ -1,0 +1,21 @@
+
+<h2>All Aviliable Movies</h2>
+<h1 class ="current-category"><%= params[:category] %></h1>
+<% if @movies.count ==0 %>
+<h1> There are currently no movies in this category</h1>
+
+   <% else %>
+   <div class="row">
+
+    <% @movies.each do |movie| %>
+    <div class ="col-md-4">
+    	<div class="movie">
+    <h3><%= link_to movie.title, movie_path(movie), class:"anchor" %></h3>
+</div>
+</div>
+
+ <% end %>
+</div>
+
+<% end %>
+

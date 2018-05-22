@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+@import "bootstrap";
+p.alert, p.notice {
+	margin: 0;
+}
+
+.movie
+{   
+	
+    margin-top: 100px;
+	margin-bottom:50px;
+	paddind:0PX 10px 10px 10px;
+	text-align:center;
+	font-family:jokerman;
+	font-weight:10px;
+
+}
+.anchor
+{
+	color:black;
+
+}
+.col-md-4
+{
+    background:url(change.jpg);
+    	background-size:100%;
+	background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    width: 325px;
+    height: 250px;
+    margin-right:15px;
+    margin-bottom:15px;
+    margin-left:50px;   
+	
+}
+.col-md-4:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+h2
+{
+	margin-top:0px;
+	text-align:center;
+	font-family:jokerman;
+	color:black;
+}
+body
+{
+	background:url(bc.png) ;
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+h1
+{
+font-family:jokerman;
+padding-bottom:10px;
+color:blue;	
+}
+
+.navbar {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+}
+.navbar-default {
+	background-color: #fff;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+	.navbar-nav > li > a {
+		color: #222;
+		&:hover {
+			color: darken(#f1c40f, 5%);
+			transition: 0.5s;
+		}
+	}
+
+	.navbar-header {
+
+		.navbar-brand {
+			color: #222;
+			letter-spacing: 1.4px;
+		}
+
+	}
+
+	.dropdown-menu > li > a:hover {
+		background-color: darken(#f1c40f, 5%);
+		color: #fff;
+	}
+
+	.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+		background-color: darken(#f1c40f, 5%);
+		color: #fff;	
+	}
+
+}
